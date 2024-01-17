@@ -12,27 +12,45 @@ body{
     font-family: 'Lora', sans-serif;
     font-size: 50px;
     text-align: center;
+    position: relative; /* Añadido para que .cursor sea relativo a .container */
 }
 
 h1{
     text-shadow: 10px 8px 6px rgba(0, 0, 0, 0.5);
     overflow: hidden; /* Ocultar el texto antes de la animación */
     white-space: nowrap; /* Evitar el salto de línea */
+    display: inline-block; /* Alinea el texto en línea para animación */
+    position: relative; /* Añadido para que .cursor sea relativo a h1 */
+    animation: typing 3s steps(14) forwards; /* Ajusta la duración y el número de pasos según sea necesario */
 }
 
-@keyframes fadeIn {
+/*Animacion maquina de escribir*/
+@keyframes typing {
     from {
-        opacity: 0;
-        transform: translateY(1em);
+        width: 0;
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        width: 100%;
     }
 }
 
-/* Aplicar la animación al texto */
-h1 {
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 0.5s; /* Ajusta el retraso según sea necesario */
+/* Barra de cursor */
+.cursor {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 2px;
+    height: 1em;
+    background-color: #fff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 0;
+    }
+    51%, 100% {
+        opacity: 1;
+    }
 }
