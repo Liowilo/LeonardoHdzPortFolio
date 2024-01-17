@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(to bottom, #c54f92, #ff8fab);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container{
+    font-family: 'Lora', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+h1{
+    text-shadow: 10px 8px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Ocultar el texto antes de la animación */
+    white-space: nowrap; /* Evitar el salto de línea */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(1em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar la animación al texto */
+h1 {
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 0.5s; /* Ajusta el retraso según sea necesario */
+}
