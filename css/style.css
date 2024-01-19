@@ -1,4 +1,4 @@
-body{
+body {
     background: linear-gradient(to bottom, #c54f92, #ff8fab);
     height: 100vh;
     margin: 0;
@@ -6,41 +6,30 @@ body{
     align-items: center;
     justify-content: center;
     color: #fff;
-    margin: 0px;
-    padding: 0px;
-}
-
-.header img {
-    border-radius: 20%;
-  }
-
-.container h1{
-    text-shadow: 10px 8px 6px rgba(0, 0, 0, 0.5);
-    overflow: hidden; /* Ocultar el texto antes de la animación */
-    white-space: nowrap; /* Evitar el salto de línea */
-    display: inline-block; /* Alinea el texto en línea para animación */
-    position: relative; /* Añadido para que .cursor sea relativo a h1 */
-    animation: typing 3s steps(14) forwards; /* Ajusta la duración y el número de pasos según sea necesario */
 }
 
 .header {
-    color: #fff; /* Color del texto en el header */
-    padding: 10px; /* Ajusta según sea necesario */
-    text-align: left; /* Alinea el contenido del header a la izquierda */
+    color: #fff;
+    padding: 10px;
+    text-align: left;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
+.header img {
+    border-radius: 20%;
+}
+
 .header__name {
     display: flex;
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    align-items: center;
+    padding-left: 10px;
 }
 
 .material-symbols-outlined {
-    margin-left: 5px; /* Puedes ajustar este valor según sea necesario para dar espacio entre el nombre y el icono */
+    margin-left: 5px;
 }
-
 
 .header__brand {
     text-decoration: none;
@@ -52,68 +41,54 @@ body{
     font-size: 30px;
     padding-left: 20px;
     padding-top: 10px;
-    
 }
 
-
-.header__name {
-    padding-left: 10px;
-}
-
-
-
-.container{
+.container {
     font-family: 'Lora', sans-serif;
     font-size: 50px;
     text-align: center;
-    position: relative; /* Añadido para que .cursor sea relativo a .container */
+    position: relative;
+}
+
+.container h1 {
+    text-shadow: 10px 8px 6px rgba(0, 0, 0, 0.5);
+    border-right: 5px solid;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    animation: 
+            typing 4s steps(21),
+            cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
 }
 
 
-
-/*Animacion maquina de escribir*/
 @keyframes typing {
     from {
         width: 0;
     }
-    to {
-        width: 100%;
-    }
-}
-
-/* Barra de cursor */
-.cursor {
-    position: absolute;
-    top: 35%;
-    transform: translateY(-50%);
-    right: 150px;
-    width: 3px;
-    height: 2em;
-    background-color: #fff;
-    animation: blink 1s infinite;
-    transition: left .15s ease-out; /* Agregado para la transición */
-}
-
-@keyframes blink {
-    0%, 50% {
-        opacity: 0;
-    }
-    51%, 100% {
-        opacity: 1;
-    }
 }
 
 .description-container {
-    margin-top: 5px; 
-    opacity: 0; /* Inicialmente establece la opacidad en 0 */
-    animation: fade-in 3s ease-in-out 2.2s forwards; /* Animación de desvanecimiento con retraso */
+    margin-top: 5px;
+    opacity: 0;
+    animation: fade-in 6s ease-in-out 2.2s forwards;
 }
 
 .description {
     font-family: Poppins, sans-serif;
-    font-size: 1.2em; 
+    font-size: 1em;
+    font-weight: lighter;
     text-shadow: 12px 8px 8px rgba(0, 0, 0, 0.4);
-    margin-top: -40px; 
+    margin-top: -40px;
 }
 
 @keyframes fade-in {
