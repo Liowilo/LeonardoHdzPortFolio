@@ -8,42 +8,8 @@ body {
     color: #fff;
 }
 
-.header {
-    color: #fff;
-    padding: 10px;
-    text-align: left;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.header img {
-    border-radius: 20%;
-}
-
-.header__name {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.material-symbols-outlined {
-    margin-left: 5px;
-}
-
-.header__brand {
-    text-decoration: none;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    padding-left: 20px;
-    padding-top: 10px;
-}
-
 .container {
+    color: white;
     font-family: 'Lora', sans-serif;
     font-size: 50px;
     text-align: center;
@@ -51,6 +17,9 @@ body {
 }
 
 .container h1 {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 100px;
+    font-weight: 500;
     text-shadow: 10px 8px 6px rgba(0, 0, 0, 0.5);
     border-right: 5px solid;
     width: 100%;
@@ -61,8 +30,9 @@ body {
     position: relative;
     animation: 
             typing 4s steps(21),
-            cursor .4s step-end infinite alternate;
+            cursor .5s step-end infinite alternate;
 }
+
 
 @keyframes cursor {
     50% {
@@ -88,7 +58,7 @@ body {
     font-size: 1em;
     font-weight: lighter;
     text-shadow: 12px 8px 8px rgba(0, 0, 0, 0.4);
-    margin-top: -40px;
+    margin-top: -20px;
 }
 
 @keyframes fade-in {
@@ -100,18 +70,25 @@ body {
     }
 }
 
-.header__name:hover {
-    animation: shake 0.5s;
+
+/* Estilos para pantallas de tamaño pequeño (teléfonos móviles) */
+@media (max-width: 767px) {
+    .container h1 {
+        font-size: 40px; 
+    }
+    .description-container {
+        font-size: 20px;
+    }
 }
 
-@keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
+/* Estilos adicionales para pantallas de tamaño medio (tabletas) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container h1 {
+        font-size: 60px; 
     }
-    25%, 75% {
-        transform: translateY(-5px);
-    }
-    50% {
-        transform: translateY(5px);
+    .description-container {
+        font-size: 40px;
     }
 }
+
+
