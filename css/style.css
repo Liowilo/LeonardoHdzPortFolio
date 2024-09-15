@@ -92,10 +92,15 @@ img {
 }
 
 /* hero */
-#hero{
-    padding-bottom: 180px;
-    background-position: center;
-    position: relative;
+#hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  padding-top: 150px;
 }
 
 #hero h1{
@@ -128,14 +133,11 @@ img {
   }
 
   #hero .arrow-scroll {
-    position: absolute;
-    bottom: 300px; /* Ajusta según necesites */
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100px; /* Ajusta según el tamaño de tus flechas */
+    padding-bottom: 15rem !important;
   }
   
   #hero .arrow-scroll .arrow {
