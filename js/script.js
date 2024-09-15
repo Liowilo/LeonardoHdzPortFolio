@@ -1,43 +1,43 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var typed = new Typed('#typed-text', {
-      strings: [
-        '&lt;p&gt;Leonardo Hez&lt;/p&gt;', // Versión con error ortográfico
-        '&lt;p&gt;Leonardo Hdz&lt;/p&gt;',
-        '&lt;p&gt;Programador&lt;/p&gt;',
-        '&lt;p&gt;Youtuber^-^&lt;/p&gt;',
-        '&lt;p&gt;Leonardo Hdz&lt;/p&gt;',  // Versión corregida
-      ],
-      typeSpeed: 100,
-      backSpeed: 60,
-      startDelay: 500,
-      backDelay: 1000,
-      loop: false,
-      showCursor: true,
-      cursorChar: '|',
-      cursorBlink: 530
-    });
+document.addEventListener('DOMContentLoaded', function () {
+  var typed = new Typed('#typed-text', {
+    strings: [
+      '&lt;p&gt;Leonardo Hez&lt;/p&gt;', // Versión con error ortográfico
+      '&lt;p&gt;Leonardo Hdz&lt;/p&gt;',
+      '&lt;p&gt;Programador&lt;/p&gt;',
+      '&lt;p&gt;Youtuber^-^&lt;/p&gt;',
+      '&lt;p&gt;Leonardo Hdz&lt;/p&gt;',  // Versión corregida
+    ],
+    typeSpeed: 100,
+    backSpeed: 60,
+    startDelay: 500,
+    backDelay: 1000,
+    loop: false,
+    showCursor: true,
+    cursorChar: '|',
+    cursorBlink: 530
   });
+});
 
-  document.addEventListener('DOMContentLoaded', function () {
-    emailjs.init("g6j1fvvaHSN371KtS"); // Reemplaza con tu User ID de EmailJS
+document.addEventListener('DOMContentLoaded', function () {
+  emailjs.init("g6j1fvvaHSN371KtS"); // Reemplaza con tu User ID de EmailJS
 
-    var form = document.getElementById('contactForm');
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
+  var form = document.getElementById('contactForm');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-      emailjs.sendForm('service_l7minui', 'template_l5yzmw8', this)
-        .then(function () {
-          console.log('SUCCESS!');
-          alert('Mensaje enviado con éxito!');
-          form.reset(); // Limpia el formulario después de enviar
-        }, function (error) {
-          console.log('FAILED...', error);
-          alert('Error al enviar el mensaje. Por favor, intenta de nuevo.');
-        });
-    });
+    emailjs.sendForm('service_l7minui', 'template_l5yzmw8', this)
+      .then(function () {
+        console.log('SUCCESS!');
+        alert('Mensaje enviado con éxito!');
+        form.reset(); // Limpia el formulario después de enviar
+      }, function (error) {
+        console.log('FAILED...', error);
+        alert('Error al enviar el mensaje. Por favor, intenta de nuevo.');
+      });
   });
+});
 
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // URL de tu CV en PDF
   var url = './img/CV_Leonardo.pdf';
 
@@ -124,15 +124,27 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const pdfLinks = document.querySelectorAll('a[data-pdf="true"]');
-    
-    pdfLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const pdfUrl = this.href;
-        const viewerUrl = 'https://mozilla.github.io/pdf.js/web/viewer.html?file=';
-        window.open(viewerUrl + encodeURIComponent(pdfUrl), '_blank');
-      });
+document.addEventListener('DOMContentLoaded', function () {
+  const pdfLinks = document.querySelectorAll('a[data-pdf="true"]');
+
+  pdfLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const pdfUrl = this.href;
+      const viewerUrl = 'https://mozilla.github.io/pdf.js/web/viewer.html?file=';
+      window.open(viewerUrl + encodeURIComponent(pdfUrl), '_blank');
     });
   });
+});
+
+AOS.init({
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 900, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});

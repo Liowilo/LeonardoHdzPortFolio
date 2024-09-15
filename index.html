@@ -15,6 +15,7 @@
     rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600,700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -68,9 +69,9 @@
           <h1 class="display-1 text-white">
             <span id="typed-text"></span>
           </h1>
-          <h5 class="text-white mt-4 mb-4">Desarrollador Web, estudiante de Informática...</h5>
+          <h5 class="text-white mt-4 mb-4" data-aos="fade-up">Desarrollador Web, estudiante de Informática...</h5>
           <!-- Social Icons -->
-          <div class="mt-4 icons">
+          <div class="mt-4 icons" data-aos="fade-up">
             <a href="https://www.linkedin.com/in/leonardo-hernandez-carmona"
               class="btn btn-outline-light btn-floating m-1 rounded-circle" role="button" target="_blank"
               rel="noopener noreferrer">
@@ -92,7 +93,7 @@
         </div>
       </div>
     </div>
-    <div class="arrow-scroll pb-5">
+    <div class="arrow-scroll pb-5" data-aos="flip-up">
       <div class="arrow d-inline-block p-2 p-md-3 p-lg-4"></div>
       <div class="arrow d-inline-block p-2 p-md-3 p-lg-4"></div>
       <div class="arrow d-inline-block p-2 p-md-3 p-lg-4"></div>
@@ -104,7 +105,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center mb-4">
-          <div class="section-tittle">
+          <div class="section-tittle" data-aos="fade-right">
             <h1 class="display-4"><i class="ri-article-fill"></i> Acerca de mí</h1>
             <div class="line"></div>
             <p>Aquí hablo un poco acerca de mi vida académica...</p>
@@ -113,9 +114,9 @@
       </div>
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <img src="/img/foto.webp" alt="" class="img-fluid">
+          <img src="/img/foto.webp" alt="" class="img-fluid" data-aos="fade-up-right">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right">
           <div>
             <h1 class="mb-3"><i class="ri-school-fill me-2"></i>Universidad</h1>
             <p>Estudié la carrera de Informática en la FES Cuautitlán (UNAM), estoy desarrollando una tesis de una
@@ -136,14 +137,14 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center mb-4">
-          <div class="section-tittle">
+          <div class="section-tittle" data-aos="fade-right">
             <h1 class="display-4"><i class="ri-tools-fill"></i> Habilidades</h1>
             <div class="line"></div>
             <p>Éstas son las tecnologías más importantes en las que desarrollo mi aprendizaje...</p>
           </div>
         </div>
       </div>
-      <div class="row g-4 text-center">
+      <div class="row g-4 text-center" data-aos="zoom-in">
         <div class="col-lg-4 col-sm-6">
           <div class="habilidades theme-shadow p-lg-5">
             <div class="iconbox">
@@ -274,7 +275,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center mb-4">
-          <div class="section-tittle">
+          <div class="section-tittle" data-aos="fade-right">
             <h1 class="display-4"><i class="ri-code-box-fill"></i> Últimos Proyectos</h1>
             <div class="line"></div>
             <p>Estos son algunos de mis proyectos más recientes...</p>
@@ -282,7 +283,8 @@
         </div>
       </div>
       <div class="row g-4 text-center">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up"
+        data-aos-duration="3000">
           <a href="https://congresomatematicas.cuautitlan2.unam.mx/" class="proyecto-link" target="_blank"
             rel="noopener noreferrer">
             <div class="proyecto theme-shadow">
@@ -305,14 +307,15 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center mb-4">
-          <div class="section-tittle">
+          <div class="section-tittle" data-aos="fade-right">
             <h1 class="display-4"><i class="ri-award-fill"></i> Certificados</h1>
             <div class="line"></div>
             <p>Estos son algunos de los certificados que he obtenido...</p>
           </div>
         </div>
       </div>
-      <div class="row g-4 text-center">
+      <div class="row g-4 text-center" data-aos="fade-up"
+      data-aos-duration="3000">
         <div class="col-lg-4 col-sm-6">
           <a href="/img/diploma-git-github.pdf" class="certificado-link" target="_blank" data-pdf="true">
             <div class="certificado theme-shadow">
@@ -371,14 +374,17 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center mb-4">
-          <div class="section-tittle">
+          <div class="section-tittle" data-aos="fade-right">
             <h1 class="display-4"><i class="ri-file-text-line"></i> Mi CV</h1>
             <div class="line"></div>
             <p>Explora mi experiencia y habilidades de forma interactiva</p>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0">
         <div class="col-lg-10">
           <div id="pdf-viewer" class="pdf-viewer theme-shadow">
             <canvas id="pdf-render"></canvas>
@@ -400,14 +406,15 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center mb-4">
-          <div class="section-tittle">
+          <div class="section-tittle" data-aos="fade-right">
             <h1 class="display-4"><i class="ri-mail-send-fill"></i> Contacto</h1>
             <div class="line"></div>
             <p>¿Tienes alguna pregunta o propuesta? ¡Contáctame!</p>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
         <div class="col-lg-8">
           <form id="contactForm" class="theme-shadow p-5 rounded">
             <div class="mb-3">
@@ -432,6 +439,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="/js/script.js"></script>
 </body>
 
