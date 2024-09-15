@@ -123,3 +123,16 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('zoom-out').addEventListener('click', zoomOut);
   })
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const pdfLinks = document.querySelectorAll('a[data-pdf="true"]');
+    
+    pdfLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const pdfUrl = this.href;
+        const viewerUrl = 'https://mozilla.github.io/pdf.js/web/viewer.html?file=';
+        window.open(viewerUrl + encodeURIComponent(pdfUrl), '_blank');
+      });
+    });
+  });
