@@ -2,31 +2,508 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <title>Leonardo Hdz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leonardo Hernández Carmona || web developer💻</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 
 <body>
-
-    <div class="container">
-        <div id="typed-text"></div>
-        <h1>&lt;p&gt;Leonardo Hdz&lt;/p&gt;</h1>
-        <div class="cursor"></div>
-        <div class="description-container">
-            <p class="description">Desarrollador Web, estudiante de Informática...</p>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top custom-bg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://liowilo.carrd.co/" target="_blank" rel="noopener noreferrer">
+        <img src="/img/lio.webp" alt="" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="#acercade">Acerca de mí</a>
+          </li>
+          <li class="nav-item"></li>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="#certificados">Certificados</a>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="#cv">CV</a>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        <a href="/img/CV_Leonardo.pdf" download class="btn btn-brand ms-lg-3">Descargar CV</a>
+      </div>
     </div>
-    <script src="scripts/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-1 text-white">
+            <span id="typed-text"></span>
+          </h1>
+          <h5 class="text-white mt-4 mb-4">Desarrollador Web, estudiante de Informática...</h5>
+          <!-- Social Icons -->
+          <div class="mt-4">
+            <a href="https://www.linkedin.com/in/leonardo-hernandez-carmona"
+              class="btn btn-outline-light btn-floating m-1 rounded-circle" role="button" target="_blank"
+              rel="noopener noreferrer">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="https://github.com/Liowilo" class="btn btn-outline-light btn-floating m-1 rounded-circle"
+              role="button" target="_blank" rel="noopener noreferrer">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://www.youtube.com/@Liowilo" class="btn btn-outline-light btn-floating m-1 rounded-circle"
+              role="button" target="_blank" rel="noopener noreferrer">
+              <i class="ri-youtube-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/liowil0/" class="btn btn-outline-light btn-floating m-1 rounded-circle"
+              role="button" target="_blank" rel="noopener noreferrer">
+              <i class="ri-instagram-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-scroll">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <!-- Acerca de mí -->
+  <section id="acercade" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <div class="section-tittle">
+            <h1 class="display-4"><i class="ri-article-fill"></i> Acerca de mí</h1>
+            <div class="line"></div>
+            <p>Aquí hablo un poco acerca de mi vida académica...</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="/img/foto.webp" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <h1 class="mb-3"><i class="ri-school-fill me-2"></i>Universidad</h1>
+            <p>Estudié la carrera de Informática en la FES Cuautitlán (UNAM), estoy desarrollando una tesis de una
+              página web sobre cursos de programación aplicando redes neuronales (python), para ver el rendimiento de
+              los usuarios y
+              dar recomendaciones.</p>
+            <h1 class="mt-4 mb-3"><i class="ri-terminal-box-fill me-2"></i>Programación</h1>
+            <p>Durante toda mi carrera estuve tomando cursos de programación y haciendo proyectos independientes, ya que
+              es una de mis grandes pasiones, poder crear algo desde cero y plasmarlo en una aplicación web.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <div class="section-tittle">
+            <h1 class="display-4"><i class="ri-tools-fill"></i> Habilidades</h1>
+            <div class="line"></div>
+            <p>Éstas son las tecnologías más importantes en las que desarrollo mi aprendizaje...</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-html5-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">HTML5</h5>
+            <p>Domino HTML5 para estructurar sitios web eficientes y bien organizados, aplicando buenas prácticas de
+              semántica y accesibilidad.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-css3-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">CSS3</h5>
+            <p>Sé utilizar el lenguaje de CSS3, creando diseños atractivos y responsivos, optimizando la experiencia del
+              usuario en
+              cualquier dispositivo.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-javascript-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">JavaScript</h5>
+            <p>Desarrollo funciones dinámicas e interactivas con JavaScript, mejorando la usabilidad y experiencia en
+              sitios web.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-bootstrap-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">Bootstrap</h5>
+            <p>Utilizo Bootstrap para diseñar sitios web responsivos y modernos de manera rápida y eficiente, adaptables
+              a cualquier dispositivo.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-server-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">PHP</h5>
+            <p>Programo en PHP para desarrollar aplicaciones web dinámicas y seguras, manejando tanto el frontend como
+              el backend con eficacia.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-terminal-box-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">Python</h5>
+            <p>Programo en Python para desarrollar aplicaciones robustas y automatizar tareas, enfocándome en la
+              eficiencia y claridad del código.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-flask-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">Flask</h5>
+            <p>Desarrollo aplicaciones web escalables con Flask, creando APIs eficientes y soluciones backend simples
+              pero potentes.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-database-2-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">MySQL</h5>
+            <p>Gestiono bases de datos en MySQL, optimizando consultas y estructuras para un almacenamiento eficiente y
+              seguro de datos.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-git-branch-line"></i>
+            </div>
+            <h5 class="mt-4 mb-3">git</h5>
+            <p>Utilizo Git para el control de versiones, colaborando eficientemente en proyectos y manteniendo un
+              historial claro de cambios.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-github-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">GitHub</h5>
+            <p>Gestiono proyectos y colaboro con otros desarrolladores en GitHub, aprovechando sus herramientas para el
+              control de versiones y la integración continua.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-stack-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">Diseño UX</h5>
+            <p>Aplicó principios de diseño UX para crear interfaces intuitivas y centradas en el usuario, mejorando la
+              experiencia y la accesibilidad en cada proyecto.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="habilidades theme-shadow p-lg-5">
+            <div class="iconbox">
+              <i class="ri-bar-chart-box-fill"></i>
+            </div>
+            <h5 class="mt-4 mb-3">Metodologías Ágiles</h5>
+            <p>Trabajo con la metodología SCRUM para gestionar proyectos de desarrollo ágilmente, facilitando la
+              colaboración y adaptándome rápidamente a los cambios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prouectos -->
+  <section id="proyectos" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <div class="section-tittle">
+            <h1 class="display-4"><i class="ri-code-box-fill"></i> Últimos Proyectos</h1>
+            <div class="line"></div>
+            <p>Estos son algunos de mis proyectos más recientes...</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-lg-4 col-sm-6">
+          <a href="#habilidades" class="proyecto-link">
+            <div class="proyecto theme-shadow">
+              <img src="/img/lio.webp" alt="Proyecto 1" class="img-fluid">
+              <div class="proyecto-info">
+                <h5 class="mt-3 mb-2">Diseño Web</h5>
+                <p>Desarrollo de sitio web responsivo con HTML, CSS y JavaScript.</p>
+                <span class="btn btn-brand text-white">Ver proyecto <i class="ri-arrow-right-up-line"></i></span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Repite este bloque para otros proyectos -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificados -->
+  <section id="certificados" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <div class="section-tittle">
+            <h1 class="display-4"><i class="ri-award-fill"></i> Certificados</h1>
+            <div class="line"></div>
+            <p>Estos son algunos de los certificados que he obtenido...</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-lg-4 col-sm-6">
+          <a href="#" class="certificado-link">
+            <div class="certificado theme-shadow">
+              <img src="/img/diploma-git-github.webp" alt="Certificado 1" class="img-fluid">
+              <div class="certificado-info">
+                <h5 class="mt-3 mb-2">Certificado de HTML5</h5>
+                <p>Otorgado por FreeCodeCamp</p>
+                <span class="btn btn-brand text-white">Ver certificado <i class="ri-external-link-line"></i></span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Repite este bloque para otros certificados -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section id="cv" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <div class="section-tittle">
+            <h1 class="display-4"><i class="ri-file-text-line"></i> Mi CV</h1>
+            <div class="line"></div>
+            <p>Explora mi experiencia y habilidades de forma interactiva</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div id="pdf-viewer" class="pdf-viewer theme-shadow">
+            <canvas id="pdf-render"></canvas>
+            <div id="pdf-controls" class="mt-3">
+              <button id="prev" class="btn btn-secondary">Anterior</button>
+              <button id="next" class="btn btn-secondary">Siguiente</button>
+              <span class="text-black">Página: <span id="page-num"></span> / <span id="page-count"></span></span>
+              <button id="zoom-in" class="btn btn-info">Zoom +</button>
+              <button id="zoom-out" class="btn btn-info">Zoom -</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <div class="section-tittle">
+            <h1 class="display-4"><i class="ri-mail-send-fill"></i> Contacto</h1>
+            <div class="line"></div>
+            <p>¿Tienes alguna pregunta o propuesta? ¡Contáctame!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form id="contactForm" class="theme-shadow p-5 rounded">
+            <div class="mb-3">
+              <label for="from_name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="from_name" name="from_name" required>
+            </div>
+            <div class="mb-3">
+              <label for="from_email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="from_email" name="from_email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-brand text-white">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      emailjs.init("g6j1fvvaHSN371KtS"); // Reemplaza con tu User ID de EmailJS
+
+      var form = document.getElementById('contactForm');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_l7minui', 'template_l5yzmw8', this)
+          .then(function () {
+            console.log('SUCCESS!');
+            alert('Mensaje enviado con éxito!');
+            form.reset(); // Limpia el formulario después de enviar
+          }, function (error) {
+            console.log('FAILED...', error);
+            alert('Error al enviar el mensaje. Por favor, intenta de nuevo.');
+          });
+      });
+    });
+  </script>
+  <script>
+    // URL de tu CV en PDF
+    var url = '/img/CV_Leonardo.pdf';
+
+    // Configuración de PDF.js
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.worker.min.js';
+
+    var pdfDoc = null,
+      pageNum = 1,
+      pageRendering = false,
+      pageNumPending = null,
+      scale = 1.5;
+
+    function renderPage(num) {
+      pageRendering = true;
+      pdfDoc.getPage(num).then(function (page) {
+        var viewport = page.getViewport({ scale: scale });
+        var canvas = document.getElementById('pdf-render');
+        var ctx = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        renderTask.promise.then(function () {
+          pageRendering = false;
+          if (pageNumPending !== null) {
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      document.getElementById('page-num').textContent = num;
+    }
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+
+    function zoomIn() {
+      scale *= 1.2;
+      renderPage(pageNum);
+    }
+
+    function zoomOut() {
+      scale /= 1.2;
+      renderPage(pageNum);
+    }
+
+    pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      document.getElementById('page-count').textContent = pdfDoc.numPages;
+
+      renderPage(pageNum);
+
+      document.getElementById('prev').addEventListener('click', onPrevPage);
+      document.getElementById('next').addEventListener('click', onNextPage);
+      document.getElementById('zoom-in').addEventListener('click', zoomIn);
+      document.getElementById('zoom-out').addEventListener('click', zoomOut);
+    });
+  </script>
 </body>
 
 </html>
